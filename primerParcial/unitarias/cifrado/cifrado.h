@@ -11,18 +11,18 @@ class Cifrado
     string key;
     vector<string> dict;
     vector<string> textoEncriptado;
-    void cargar_diccionario();
-    void cargar_encriptado(string & cesar, string & vigenere);
+    int cargar_diccionario();
+    int cargar_encriptado(string & cesar, string & vigenere);
     string cesar_decrypt(string word, int key);
     string vigenere_decrypt(string text, string key);
 };
 
-void Cifrado::cargar_diccionario()
+int Cifrado::cargar_diccionario()
 {
   int count = 0;
   string line;
 
-  ifstream myfile ("diccionario.txt");
+  ifstream myfile ("../cifrado/diccionario.txt");
     if ( myfile.is_open() )
     {
          while ( ! myfile.eof() )
@@ -34,8 +34,10 @@ void Cifrado::cargar_diccionario()
          myfile.close();
     }else{
           cout << "Unable to open file." << endl;
+          return 0;
     }
     cout << "Diccionario | Lineas cargadas: " << count << endl;
+    return 1;
 }
 
 string Cifrado::cesar_decrypt(string word, int key)
@@ -66,6 +68,7 @@ string Cifrado::cesar_decrypt(string word, int key)
     if(std::find(dict.begin(), dict.end(), str) != dict.end())
     {
       transform(str.begin(), str.end(), str.begin(), ::toupper);
+      cout << str << endl;
       return str;
     } else {
       if (key < 27)
@@ -77,12 +80,12 @@ string Cifrado::cesar_decrypt(string word, int key)
     }
 }
 
-void Cifrado::cargar_encriptado(string & cesar, string & vigenere)
+int Cifrado::cargar_encriptado(string & cesar, string & vigenere)
 {
   int count = 0;
   string line;
 
-  ifstream myfile ("encriptado.txt");
+  ifstream myfile ("../cifrado/encriptado.txt");
     if ( myfile.is_open() )
     {
          while ( ! myfile.eof() )
@@ -96,11 +99,14 @@ void Cifrado::cargar_encriptado(string & cesar, string & vigenere)
          myfile.close();
     }else{
           cout << "Unable to open file." << endl;
+          return 0;
     }
     cout << "Encriptado | Lineas cargadas: " << count << endl;
 
     cesar = textoEncriptado[0];
     vigenere = textoEncriptado[1];
+
+    return 1;
 }
 
 string Cifrado::vigenere_decrypt(string text, string key)

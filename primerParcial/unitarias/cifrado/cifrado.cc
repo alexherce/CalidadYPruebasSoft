@@ -3,7 +3,6 @@
 
 int main()
 {
-  string word = "RLCOPY";
   string cesar, vigenere;
   Cifrado cif;
   cif.cargar_diccionario();
