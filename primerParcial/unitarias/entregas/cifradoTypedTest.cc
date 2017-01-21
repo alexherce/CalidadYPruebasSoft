@@ -33,5 +33,5 @@ TYPED_TEST(FixTyped, enteros)
 
 TYPED_TEST(FixTyped, strings)
 {
-  EXPECT_EQ("GARDEN", this->instance2Test->cesar_decrypt(cesar, 11));
+  EXPECT_EQ("GARDEN", this->instance2Test->cesar_decrypt(cesar, 1));
 }
