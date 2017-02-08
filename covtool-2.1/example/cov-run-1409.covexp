@@ -1,0 +1,6 @@
+file: /Users/herce/Git/CalidadYPruebasSoft/covtool-2.1/example/program.c 7 3 42
+el:  4 5 7 
+il:  4 5 7 10 12 15 17 
+file: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h 4 0 0
+il:  353 354 355 357 
+totals: 11 3 27

@@ -1,0 +1,23 @@
+file: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h 4 0 0
+il:  353 354 355 357 
+file: /Users/herce/Git/CalidadYPruebasSoft/covtool-2.1/example/program.c 7 5 71
+il:  4 5 7 10 12 15 17 
+el:  4 5 7 10 15 
+totals: 11 5 45
+dir: /Applications 4 0 0
+dir: /Applications/Xcode.app 4 0 0
+dir: /Applications/Xcode.app/Contents 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr 4 0 0
+dir: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include 4 0 0
+dir: /Users 7 5 71
+dir: /Users/herce 7 5 71
+dir: /Users/herce/Git 7 5 71
+dir: /Users/herce/Git/CalidadYPruebasSoft 7 5 71
+dir: /Users/herce/Git/CalidadYPruebasSoft/covtool-2.1 7 5 71
+dir: /Users/herce/Git/CalidadYPruebasSoft/covtool-2.1/example 7 5 71
