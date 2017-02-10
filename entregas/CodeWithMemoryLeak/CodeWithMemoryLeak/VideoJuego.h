@@ -55,7 +55,7 @@ public:
         this->number_of_players = new int(*other.number_of_players);
 
     }
-    ~Estrategia(){
+    virtual ~Estrategia(){
         if(number_of_players) delete number_of_players;
     }
 protected:
@@ -79,7 +79,7 @@ public:
         this->tipo_juego = new VideoJuego::tipo(*other.tipo_juego);
         this->rate_category = new string(*other.rate_category);
     }
-    ~Aventura()
+    virtual ~Aventura()
     {
         if(rate_category) delete rate_category;
     }
@@ -104,7 +104,7 @@ public:
         this->tipo_juego = new VideoJuego::tipo(*other.tipo_juego);
         this->num_niveles = new int(*other.num_niveles);
     }
-    ~Aprendizaje()
+    virtual ~Aprendizaje()
     {
         if(num_niveles) delete num_niveles;
     }
